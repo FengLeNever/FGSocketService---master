@@ -3,10 +3,12 @@
 有感于以前项目中通信框架的十分臃肿（...每个协议号对应着一个Model类的架构，怎么吐槽），对项目的Tcp框架重新梳理，拿出来和大家分享一下，肯定有不完善之处，希望各位大佬指点。
 
 ######文件目录：
+
 ![文件目录.png](https://upload-images.jianshu.io/upload_images/1637319-7c17558301bf1ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ######逻辑文件说明：
+
 ![逻辑文件.png](https://upload-images.jianshu.io/upload_images/1637319-7f86d7a328175de9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 1.  FGSocketService类：这个类位于最上层，负责对整个APP提供接口，供外部调用。
@@ -18,6 +20,7 @@
 7. FGSocketConnectParam类：连接socket的配置数据Model。
 
 ######数据文件说明：
+
 ![数据.png](https://upload-images.jianshu.io/upload_images/1637319-5f367ba5568dc386.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 FGSocketPacket声明协议类型和数据，子类通过初始化方法填充数据。
