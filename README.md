@@ -2,7 +2,7 @@
 > 虽然CocoaAsyncSocket已经非常的成熟，但是由于项目，业务，协议等不同导致tcp模块的公用性不高，需要根据协议重新订制调整，不能直接拷贝框架使用。
 有感于以前项目中通信框架的十分臃肿（...每个协议号对应着一个Model类的架构，怎么吐槽），对项目的Tcp框架重新梳理，拿出来和大家分享一下，肯定有不完善之处，希望各位大佬指点。
 
-#### [简书](https://www.jianshu.com/p/bce3b905fbd6)
+###### [简书地址](https://www.jianshu.com/p/bce3b905fbd6)
 
 ######文件目录：
 
@@ -44,5 +44,4 @@ FGSocketPacket声明协议类型和数据，子类通过初始化方法填充数
 [[FGSocketService shareSocketService] appLogout];
 ```
 ######感谢：
-RHSocketKit（https://github.com/zhu410289616/RHSocketKit）感谢开源作者贡献
-
+#### [RHSocketKit](https://github.com/zhu410289616/RHSocketKit) 感谢开源作者贡献
