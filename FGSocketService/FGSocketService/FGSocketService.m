@@ -119,23 +119,23 @@ static FGSocketService *service = nil;
 
 - (void)channelOpened:(FGSocketChannel *)channel host:(NSString *)host port:(int)port
 {
-    [self sendAtuh];
+    /* 连接成功的逻辑 */
 }
 
 - (void)channelClosed:(FGSocketChannel *)channel error:(NSError *)error
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kFGSocketErrorConnectedNotification object:NULL];
+    /* 连接失败的逻辑 */
 }
+
 
 - (void)channel:(FGSocketChannel *)channel received:(FGDownstreamPacket *)packet
 {
-    /*
-     在这里处理具体的业务逻辑...
-     */
+    /* 在这里,根据协议号处理具体的业务逻辑... */
 }
 
 #pragma mark - Notification
 
+/* 网络状态改变的处理... */
 - (void)addNetworkingStatusNotification
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onReceiveReachabilityChangedNotification:) name:kFGReachabilityChangedNotification object:NULL];
@@ -153,7 +153,7 @@ static FGSocketService *service = nil;
     }
 }
 
-
+/* App前后台切换的处理... */
 - (void)addAppStatusNotification
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleApplicationDidChangeStatus:) name:UIApplicationDidEnterBackgroundNotification object:NULL];

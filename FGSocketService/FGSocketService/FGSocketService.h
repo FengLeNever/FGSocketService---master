@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FGSocketPacket.h"
 
+/* 验证连接成功和失败 */
 extern NSString * const kFGSocketAuthSuccessNotification;
 extern NSString * const kFGSocketErrorConnectedNotification;
 
@@ -26,7 +27,7 @@ extern NSString * const kFGSocketErrorConnectedNotification;
 
 @interface FGSocketService : NSObject
 
-// 我在这里采用不同业务逻辑区分不同代理
+/* 我在这里采用不同业务逻辑-对应-不同代理 */
 /**
  A代理
  */

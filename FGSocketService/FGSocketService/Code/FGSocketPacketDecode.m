@@ -32,6 +32,7 @@
     return self;
 }
 
+/* 处理了粘包和断包的情况 */
 - (NSInteger)decodeDownPacket:(NSData *)downPacket output:(id<FGSocketDecoderOutputProtocol>)output
 {
     // 读取数据的下标
