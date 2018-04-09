@@ -6,20 +6,11 @@
 
 ######文件目录：
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 ![文件目录.png](https://upload-images.jianshu.io/upload_images/1637319-7c17558301bf1ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 ######逻辑文件说明：
 
 ![逻辑文件.png](https://upload-images.jianshu.io/upload_images/1637319-a6e1503af5b88284.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 1.  FGSocketService类：这个类位于最上层，负责对整个APP提供接口，供外部调用。
 2.  FGSocketConnection类：只负责socket网络的连接通信，内部使用GCDAsyncSocket；
